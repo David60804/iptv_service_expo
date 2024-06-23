@@ -16,7 +16,7 @@ const LoginScreen = () => {
   const user = useSelector((state) => state.auth.user);
 
 
-console.log('Unique Device ID:', uniqueId);
+
 
 
   const handleLogin = () => {
