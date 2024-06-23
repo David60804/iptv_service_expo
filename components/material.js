@@ -6,6 +6,7 @@ import { loginUser } from '../sotre/slices/authSlice';
 import { useNavigation } from '@react-navigation/native';
 
 
+
 const LoginScreen = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -14,6 +15,7 @@ const LoginScreen = () => {
   const navigation = useNavigation();
   const authStatus = useSelector((state) => state.auth.status);
   const user = useSelector((state) => state.auth.user);
+
 
 
 

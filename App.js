@@ -8,10 +8,15 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './components/material.js';
 import HomeScreen from './components/homeScreen.js';
+import Constants from 'expo-constants';
+
+const uniqueId = Constants.deviceId;
+console.log(uniqueId); // This will log the unique identifier of the device
 
 const Stack = createStackNavigator();
 
 export default function App() {
+  
   return (
     <ReduxProvider store={store}>
       <NavigationContainer>
